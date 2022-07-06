@@ -1,0 +1,6 @@
+use('pytech')
+db.students.find({student_id:1009})
+
+use('pytech')
+
+db.students.find({})
