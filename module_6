@@ -1,4 +1,0 @@
-use ('pytech')
-db.students.updateOne({first_name:"John"},{$set: {first_name:"Robert"}})
-
-
