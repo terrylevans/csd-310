@@ -3,7 +3,7 @@ from mysql.connector import errorcode
 
 """ database config object """
 config = {
-    "user": "pysports_user",
+    "user": "root",
     "password": "@T721a9121517@",
     "host": "127.0.0.1",
     "database": "pysports",
