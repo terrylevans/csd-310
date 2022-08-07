@@ -2,7 +2,6 @@ import sys
 import mysql.connector
 from mysql.connector import errorcodes
 
-""" database config object """
 config = {
     "user": "whatabook_user",
     "password": "MySQL8IsGreat!",
