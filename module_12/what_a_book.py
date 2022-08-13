@@ -1,6 +1,6 @@
 import sys
 import mysql.connector
-from mysql.connector import errorcodes
+from mysql.connector import errorcode
 
 config = {
     "user": "whatabook_user",
@@ -185,10 +185,10 @@ try:
 except mysql.connector.Error as err:
     """ handle errors """ 
 
-    if err.errno == errorcodes.ER_ACCESS_DENIED_ERROR:
+    if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("  The supplied username or password are invalid")
 
-    elif err.errno == errorcodes.ER_BAD_DB_ERROR:
+    elif err.errno == errorcode.ER_BAD_DB_ERROR:
         print("  The specified database does not exist")
 
     else:
